@@ -1,0 +1,29 @@
+{% extends "layout.html"%}
+{% block body%}
+<div class="card bg-light" style="height:530px;">
+    <article class="card-body mx-auto" style="max-width:400px; max-height:350px; position:relative; top:50px;">
+        <h4 class="card-title mt-3 text-center">Login</h4>
+        <p class="text-center">Get login with your free account</p>
+        <form method="POST">
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="username" class="form-control" placeholder="Username" type="text" required>
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input name="password" class="form-control" placeholder="Password" type="password" required>
+            </div> <!-- form-group// -->                                    
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+            </div> <!-- form-group// -->      
+            <p class="text-center">Not yet have an account? <a href="/register">Register here</a> </p>                                                                 
+        </form>
+    </article>
+    </div> <!-- card.// -->
+    
+    </div>
+{% endblock %}
